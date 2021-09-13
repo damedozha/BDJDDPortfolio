@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <meta name="description" content="Kenzie" />
+  <meta name="author" content="Kenzie" />
+  <meta name="keywords" content="Kenzie" />
+
+  <!-- Title Page-->
+  <title>Dame's Trivia Page</title>
+
+  <!-- CSS-->
+  <link href="style.css" rel="stylesheet" media="all" />
+</head>
+
+<header>
+  <h1>"Dame's Trivia Game"</h1>
+  <p style="font-size: xx-small;">Hint: Any one Can Win!!!</p>
+</header>
+
+<body>
+  <section class = "instructWhole" style="display: flex; align-items: center; justify-content: center;">
+    <p style="font-size: x-large; font-weight: bold;">To Play:</p>
+    <section class="instruct">Enter Your Name & Click Start<br> Enter Your Answer Below.
+      <br>You can Swap Categories at Any time,<br> however if you are Incorrect. <br> You Lose.
+    </section>
+  </section>
+  <div class="register-display">
+    <input class="name-input" placeholder="Enter Your Name" autofocus><button class="start-button">Start</button>
+    <button class="swap-button" style="display: none;">Swap Catagories</button>
+    <button class="reStart-button" style="display: none;">ReStart</button>
+  </div>
+  <hr>
+  <p class="instructAnswer">Type your answer in the box below:</p>
+  <input class="answer-box" placeholder="Type Answer Here" autofocus="true" /><button
+    class="answer-button">Submit</button>
+  <div class="name-banner"></div>
+  <section class="score">
+  <div class="score-display"></div>
+  <div class="moneyscore-display"></div>
+</section>
+  <p class="correctMessagePara" style="display: none;" data-aos="zoom-in">
+  <div class="app-display">
+    <div class="question-display"></div>
+  </div>
+ 
+  <script src="code.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+* {
+  box-sizing: auto;
+}
+body {
+    margin: 50px;
+    background-color: rgb(189, 199, 199);
+    font-size:  12pt;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color:black;
+    line-height:  14pt;
+}
+
+a {
+      text-decoration: none;
+}
+.tab {
+  line-height: 15px;
+}
+
+header h1 {
+  font-family: Marker Felt;
+  line-height: 25px;
+  letter-spacing: 1.5pt;
+}
+header + img {
+  border: 5pt solid black;
+}
+nav {
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+      margin: 15px;
+      display: inline-block;
+      text-decoration: none;
+  }
+
+nav button {
+      font-size: 18px;
+      border-radius: 10px;
+      margin: 0px 30px;  
+      }
+    
+.active nav button {
+      background-color: rgb(136, 187, 136);
+      font-size: 22px;
+    }
+nav button:hover {
+      background-color: rgb(192, 142, 142);
+      font-size: 22px;
+      transition-delay: 1000ms   
+  }
+
+li {
+    list-style-type: none;
+    line-height: 5mm;
+
+  }
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  .resume > div {
+      display: flex;
+  }
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+img {
+  margin: 15px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  padding: 1px;
+
+}
+
+footer img {
+  max-width: 50px;
+  min-width: 25px;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px){
+  
+  header nav button {
+    margin: 8px;
+  }
+  
+  .resume > div {
+    display: block;
+  }
+
+  img {
+      max-width: 200px;
+      max-height: 200px;
+  }
+  
+  footer img {
+    display: flex;
+    margin: 1px;
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  footer nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  header h1{
+    line-height: 8mm;
+  }
+
+  header nav button {
+    margin: 2px;
+    font-size: 16px;
+  }
+
+  header nav button:hover{
+      font-size: 18px;
+  }
+
+  img {
+      max-width: 140px;
+      max-height: 150px;
+  }
+
+
+  h1{
+    line-height: 6mm;
+  }
+
+  h2{
+    line-height: 7mm;
+  }
+  h3{
+    line-height: 5mm;
+  }
+  .tab p {
+    line-height: 5mm;
+  }
+  footer nav {
+    display: flex;
+    align-items: center;
+  }
+
+  footer nav li {
+    margin: 4px;
+  }
+  footer img {
+    max-width: 30px;
+    max-height: 30px;
+    
+  }
+
+}
